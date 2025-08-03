@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Detail - FaithInfoTech</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>FaithInfoTech</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="courses.html" class="nav-link">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="register.html" class="nav-link">Register</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Course Detail Header -->
+    <section class="course-detail-header">
+        <div class="container">
+            <div class="course-detail-content">
+                <div class="course-info">
+                    <h1 id="course-title">Full Stack Web Development</h1>
+                    <p class="course-subtitle">Master modern web development with hands-on projects and industry best practices</p>
+                    <div class="course-meta">
+                        <span class="meta-item"><i class="fas fa-clock"></i> <span id="course-duration">6 months</span></span>
+                        <span class="meta-item"><i class="fas fa-users"></i> <span id="course-level">Beginner to Advanced</span></span>
+                        <span class="meta-item"><i class="fas fa-certificate"></i> Certificate Included</span>
+                    </div>
+                </div>
+                <div class="course-actions">
+                    <a href="register.html" class="btn btn-primary">Apply Now</a>
+                    <a href="courses.html" class="btn btn-secondary">Back to Courses</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Content -->
+    <section class="course-content">
+        <div class="container">
+            <div class="content-grid">
+                <div class="main-content">
+                    <!-- Overview -->
+                    <div class="content-section">
+                        <h2>Course Overview</h2>
+                        <p id="course-overview">This comprehensive course covers everything you need to become a full-stack web developer. From front-end technologies like HTML, CSS, and JavaScript to back-end development with Node.js and databases, you'll learn the complete web development stack.</p>
+                    </div>
+
+                    <!-- Syllabus -->
+                    <div class="content-section">
+                        <h2>Course Syllabus</h2>
+                        <div class="syllabus-list" id="course-syllabus">
+                            <div class="syllabus-item">
+                                <h3>Module 1: Frontend Fundamentals</h3>
+                                <ul>
+                                    <li>HTML5 Structure and Semantics</li>
+                                    <li>CSS3 Styling and Layouts</li>
+                                    <li>Responsive Design Principles</li>
+                                    <li>JavaScript Basics and ES6+</li>
+                                </ul>
+                            </div>
+                            <div class="syllabus-item">
+                                <h3>Module 2: Advanced Frontend</h3>
+                                <ul>
+                                    <li>React.js Framework</li>
+                                    <li>State Management with Redux</li>
+                                    <li>Modern CSS with SASS/SCSS</li>
+                                    <li>Web APIs and AJAX</li>
+                                </ul>
+                            </div>
+                            <div class="syllabus-item">
+                                <h3>Module 3: Backend Development</h3>
+                                <ul>
+                                    <li>Node.js and Express.js</li>
+                                    <li>RESTful API Development</li>
+                                    <li>Database Design and SQL</li>
+                                    <li>Authentication and Security</li>
+                                </ul>
+                            </div>
+                            <div class="syllabus-item">
+                                <h3>Module 4: Deployment & DevOps</h3>
+                                <ul>
+                                    <li>Git Version Control</li>
+                                    <li>Cloud Deployment (AWS/Azure)</li>
+                                    <li>CI/CD Pipelines</li>
+                                    <li>Performance Optimization</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Learning Outcomes -->
+                    <div class="content-section">
+                        <h2>Learning Outcomes</h2>
+                        <div class="outcomes-list" id="course-outcomes">
+                            <div class="outcome-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Build complete web applications from scratch</span>
+                            </div>
+                            <div class="outcome-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Master modern frontend and backend technologies</span>
+                            </div>
+                            <div class="outcome-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Deploy applications to cloud platforms</span>
+                            </div>
+                            <div class="outcome-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Work with databases and APIs</span>
+                            </div>
+                            <div class="outcome-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Implement security best practices</span>
+                            </div>
+                            <div class="outcome-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Collaborate using version control systems</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar">
+                    <!-- Course Details -->
+                    <div class="sidebar-card">
+                        <h3>Course Details</h3>
+                        <div class="detail-item">
+                            <span class="label">Duration:</span>
+                            <span id="sidebar-duration">6 months</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Level:</span>
+                            <span id="sidebar-level">Beginner to Advanced</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Format:</span>
+                            <span>Online + In-person</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Certificate:</span>
+                            <span>Yes</span>
+                        </div>
+                    </div>
+
+                    <!-- Eligibility -->
+                    <div class="sidebar-card">
+                        <h3>Eligibility</h3>
+                        <div class="eligibility-list" id="course-eligibility">
+                            <div class="eligibility-item">
+                                <i class="fas fa-check"></i>
+                                <span>Basic computer knowledge</span>
+                            </div>
+                            <div class="eligibility-item">
+                                <i class="fas fa-check"></i>
+                                <span>High school diploma or equivalent</span>
+                            </div>
+                            <div class="eligibility-item">
+                                <i class="fas fa-check"></i>
+                                <span>Dedication to learn</span>
+                            </div>
+                            <div class="eligibility-item">
+                                <i class="fas fa-check"></i>
+                                <span>Access to computer and internet</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Apply Now -->
+                    <div class="sidebar-card">
+                        <h3>Ready to Start?</h3>
+                        <p>Join our next batch and begin your journey to becoming a full-stack developer.</p>
+                        <a href="register.html" class="btn btn-primary btn-full">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>FaithInfoTech</h3>
+                    <p>Empowering students with quality education and industry-relevant skills for a successful career.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FaithInfoTech. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

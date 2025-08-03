@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - FaithInfoTech</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>FaithInfoTech</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="courses.html" class="nav-link">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="register.html" class="nav-link active">Register</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Course Registration</h1>
+            <p>Join our institute and start your journey towards a successful career</p>
+        </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section class="registration-section">
+        <div class="container">
+            <div class="form-container">
+                <form id="registration-form" class="registration-form">
+                    <div class="form-header">
+                        <h2>Student Registration Form</h2>
+                        <p>Please fill in all the required fields to complete your registration.</p>
+                    </div>
+
+                    <!-- Personal Information -->
+                    <div class="form-section">
+                        <h3>Personal Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                                <span class="error-message" id="firstName-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                                <span class="error-message" id="lastName-error"></span>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message" id="email-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                                <span class="error-message" id="phone-error"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="dateOfBirth">Date of Birth *</label>
+                            <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+                            <span class="error-message" id="dateOfBirth-error"></span>
+                        </div>
+                    </div>
+
+                    <!-- Course Selection -->
+                    <div class="form-section">
+                        <h3>Course Selection</h3>
+                        <div class="form-group">
+                            <label for="course">Select Course *</label>
+                            <select id="course" name="course" required>
+                                <option value="">Choose a course...</option>
+                                <option value="data-science-genai">Data Science and Gen AI + Python Full Stack</option>
+                                <option value="devops-cloud">DevOps and Cloud Engineering + Python Full Stack</option>
+                                <option value="dotnet-angular">Full Stack Developer .NET with Angular</option>
+                                <option value="python-mern">Full Stack Developer Python with MERN</option>
+                            </select>
+                            <span class="error-message" id="course-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="batch">Preferred Batch *</label>
+                            <select id="batch" name="batch" required>
+                                <option value="">Select batch...</option>
+                                <option value="morning">Morning (9:00 AM - 12:00 PM)</option>
+                                <option value="afternoon">Afternoon (2:00 PM - 5:00 PM)</option>
+                                <option value="evening">Evening (6:00 PM - 9:00 PM)</option>
+                                <option value="weekend">Weekend (Saturday & Sunday)</option>
+                            </select>
+                            <span class="error-message" id="batch-error"></span>
+                        </div>
+                    </div>
+
+                    <!-- Address Information -->
+                    <div class="form-section">
+                        <h3>Address Information</h3>
+                        <div class="form-group">
+                            <label for="address">Street Address *</label>
+                            <input type="text" id="address" name="address" required>
+                            <span class="error-message" id="address-error"></span>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="city">City *</label>
+                                <input type="text" id="city" name="city" required>
+                                <span class="error-message" id="city-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="state">State/Province *</label>
+                                <input type="text" id="state" name="state" required>
+                                <span class="error-message" id="state-error"></span>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="zipCode">ZIP/Postal Code *</label>
+                                <input type="text" id="zipCode" name="zipCode" required>
+                                <span class="error-message" id="zipCode-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="country">Country *</label>
+                                <input type="text" id="country" name="country" required>
+                                <span class="error-message" id="country-error"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Educational Background -->
+                    <div class="form-section">
+                        <h3>Educational Background</h3>
+                        <div class="form-group">
+                            <label for="education">Highest Education Level *</label>
+                            <select id="education" name="education" required>
+                                <option value="">Select education level...</option>
+                                <option value="high-school">High School</option>
+                                <option value="bachelor">Bachelor's Degree</option>
+                                <option value="master">Master's Degree</option>
+                                <option value="phd">PhD</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="error-message" id="education-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="institution">Institution Name</label>
+                            <input type="text" id="institution" name="institution">
+                        </div>
+                        <div class="form-group">
+                            <label for="graduationYear">Year of Graduation</label>
+                            <input type="number" id="graduationYear" name="graduationYear" min="1950" max="2024">
+                        </div>
+                    </div>
+
+                    <!-- Additional Information -->
+                    <div class="form-section">
+                        <h3>Additional Information</h3>
+                        <div class="form-group">
+                            <label for="experience">Previous Work Experience (if any)</label>
+                            <textarea id="experience" name="experience" rows="3" placeholder="Describe your work experience..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="motivation">Why do you want to join this course? *</label>
+                            <textarea id="motivation" name="motivation" rows="4" required placeholder="Tell us about your motivation and career goals..."></textarea>
+                            <span class="error-message" id="motivation-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="hearAbout">How did you hear about us? *</label>
+                            <select id="hearAbout" name="hearAbout" required>
+                                <option value="">Select an option...</option>
+                                <option value="social-media">Social Media</option>
+                                <option value="website">Website</option>
+                                <option value="friend">Friend/Family</option>
+                                <option value="advertisement">Advertisement</option>
+                                <option value="search-engine">Search Engine</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="error-message" id="hearAbout-error"></span>
+                        </div>
+                    </div>
+
+                    <!-- Terms and Conditions -->
+                    <div class="form-section">
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <label for="terms">I agree to the <a href="#" class="link">Terms and Conditions</a> and <a href="#" class="link">Privacy Policy</a> *</label>
+                            <span class="error-message" id="terms-error"></span>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">I would like to receive updates about new courses and events</label>
+                        </div>
+                    </div>
+
+                    <!-- Form Buttons -->
+                    <div class="form-buttons">
+                        <button type="submit" class="btn btn-primary">Submit Registration</button>
+                        <button type="reset" class="btn btn-secondary">Reset Form</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>FaithInfoTech</h3>
+                    <p>Empowering students with quality education and industry-relevant skills for a successful career.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FaithInfoTech. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
